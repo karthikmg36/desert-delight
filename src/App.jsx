@@ -20,9 +20,7 @@ function App() {
       <ScrollToTopWrapper />
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/retail" element={<Retail />} />
+          <Route path="/" element={<Retail />} />
           <Route path="/wholesale" element={<Wholesale />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/about" element={<About />} />
