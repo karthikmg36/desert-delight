@@ -71,7 +71,7 @@ const Retail = () => {
 
                                     <div className="retail-card-footer">
                                         <div className="retail-card-price">
-                                            <span className="price-amount">${product.price.toFixed(2)}</span>
+                                            <span className="price-amount">₹{product.price.toFixed(2)}</span>
                                             <span className="price-unit">/ {product.weight}</span>
                                         </div>
                                         <div className="retail-card-origin">

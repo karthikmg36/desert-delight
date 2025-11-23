@@ -54,7 +54,7 @@ const Wholesale = () => {
                     <div className="wholesale-intro">
                         <h2>Wholesale Price List</h2>
                         <p className="wholesale-note">
-                            Minimum order: 50 units • Free shipping on orders over $1000
+                            Minimum order: 50 units • Free shipping on orders over ₹1000
                         </p>
                     </div>
 
@@ -84,8 +84,8 @@ const Wholesale = () => {
                                             </td>
                                             <td>{product.variety}</td>
                                             <td>{product.origin}</td>
-                                            <td className="price-strikethrough">${product.price.toFixed(2)}</td>
-                                            <td className="price-highlight">${product.wholesalePrice.toFixed(2)}</td>
+                                            <td className="price-strikethrough">₹{product.price.toFixed(2)}</td>
+                                            <td className="price-highlight">₹{product.wholesalePrice.toFixed(2)}</td>
                                             <td>
                                                 <span className="savings-badge">{savings}% OFF</span>
                                             </td>

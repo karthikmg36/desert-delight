@@ -13,15 +13,15 @@ const Contact = () => {
 
                         <div className="info-item">
                             <Mail className="icon" />
-                            <span>hello@desertdelight.com</span>
+                            <span>sna2care@gmail.com</span>
                         </div>
                         <div className="info-item">
                             <Phone className="icon" />
-                            <span>+123 456 7890</span>
+                            <span>9900501884</span>
                         </div>
                         <div className="info-item">
                             <MapPin className="icon" />
-                            <span>123 Date Palm Avenue, Dubai, UAE</span>
+                            <span>Celestial stars, #G4, RT nagar, Bangalore - 560032</span>
                         </div>
                     </div>
 

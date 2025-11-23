@@ -105,7 +105,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
 
                         {/* Price */}
                         <div className="modal-price-section">
-                            <span className="modal-price">${product.price.toFixed(2)}</span>
+                            <span className="modal-price">₹{product.price.toFixed(2)}</span>
                             <span className="modal-price-unit">per {product.weight}</span>
                         </div>
                     </div>

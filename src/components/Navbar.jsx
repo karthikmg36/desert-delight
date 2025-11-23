@@ -3,33 +3,32 @@ import { ShoppingBag, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    return (
-        <nav className="navbar">
-            <div className="container navbar-container">
-                <Link to="/" className="logo">
-                    Desert Delight
-                </Link>
+  return (
+    <nav className="navbar">
+      <div className="container navbar-container">
+        <Link to="/" className="logo">
+          Desert Delight
+        </Link>
 
-                <div className={`nav-links ${isOpen ? 'active' : ''}`}>
-                    <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-                    <Link to="/shop" onClick={() => setIsOpen(false)}>Shop</Link>
-                    <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
-                    <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-                </div>
+        <div className={`nav-links ${isOpen ? 'active' : ''}`}>
+          <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+          <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+        </div>
 
-                <div className="nav-actions">
-                    <Link to="/cart" className="cart-icon">
-                        <ShoppingBag size={24} />
-                        <span className="cart-count">0</span>
-                    </Link>
-                    <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
-                        {isOpen ? <X size={24} /> : <Menu size={24} />}
-                    </button>
-                </div>
-            </div>
-            <style>{`
+        <div className="nav-actions">
+          <Link to="/cart" className="cart-icon">
+            <ShoppingBag size={24} />
+            <span className="cart-count">0</span>
+          </Link>
+          <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+      </div>
+      <style>{`
         .navbar {
           padding: var(--spacing-md) 0;
           background-color: var(--color-bg);
@@ -110,8 +109,8 @@ const Navbar = () => {
           }
         }
       `}</style>
-        </nav>
-    );
+    </nav>
+  );
 };
 
 export default Navbar;

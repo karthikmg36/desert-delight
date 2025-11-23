@@ -2,40 +2,41 @@ import { Facebook, Instagram, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-    return (
-        <footer className="footer">
-            <div className="container footer-container">
-                <div className="footer-col">
-                    <h3>Desert Delight</h3>
-                    <p>Pure, Fresh, Premium Dates — Delivered to You.</p>
-                </div>
-                <div className="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/shop">Shop</Link></li>
-                        <li><Link to="/about">About Us</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-                    </ul>
-                </div>
-                <div className="footer-col">
-                    <h4>Contact</h4>
-                    <p>Email: hello@desertdelight.com</p>
-                    <p>WhatsApp: +123 456 7890</p>
-                </div>
-                <div className="footer-col">
-                    <h4>Follow Us</h4>
-                    <div className="social-icons">
-                        <a href="#"><Facebook size={20} /></a>
-                        <a href="#"><Instagram size={20} /></a>
-                        <a href="#"><Twitter size={20} /></a>
-                    </div>
-                </div>
-            </div>
-            <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Desert Delight. All rights reserved.</p>
-            </div>
-            <style>{`
+  return (
+    <footer className="footer">
+      <div className="container footer-container">
+        <div className="footer-col">
+          <h3>Desert Delight</h3>
+          <p>Pure, Fresh, Premium Dates — Delivered to You.</p>
+        </div>
+        <div className="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/shop">Shop</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>Contact</h4>
+          <p>Email: sna2care@gmail.com</p>
+          <p>Phone: 9900501884</p>
+          <p>Address: Celestial stars, #G4, RT nagar, Bangalore - 560032</p>
+        </div>
+        <div className="footer-col">
+          <h4>Follow Us</h4>
+          <div className="social-icons">
+            <a href="#"><Facebook size={20} /></a>
+            <a href="#"><Instagram size={20} /></a>
+            <a href="#"><Twitter size={20} /></a>
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} Desert Delight. All rights reserved.</p>
+      </div>
+      <style>{`
         .footer {
           background-color: var(--color-primary);
           color: var(--color-white);
@@ -75,8 +76,8 @@ const Footer = () => {
           color: rgba(255, 255, 255, 0.7);
         }
       `}</style>
-        </footer>
-    );
+    </footer>
+  );
 };
 
 export default Footer;

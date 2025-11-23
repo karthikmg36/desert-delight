@@ -535,7 +535,7 @@ ul {
 
 .retail-card-footer {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   justify-content: space-between;
   padding-top: var(--spacing-md);
   border-top: 1px solid var(--color-border);
@@ -719,6 +719,7 @@ ul {
   border-radius: 12px;
   font-size: 0.8rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .btn-view-details {

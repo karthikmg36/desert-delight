@@ -2,22 +2,22 @@ import { Link } from 'react-router-dom';
 import { ShoppingBag } from 'lucide-react';
 
 const ProductCard = ({ product }) => {
-    return (
-        <div className="product-card">
-            <Link to={`/product/${product.id}`} className="product-image-link">
-                <img src={product.image} alt={product.name} className="product-image" />
-            </Link>
-            <div className="product-info">
-                <span className="product-type">{product.type}</span>
-                <Link to={`/product/${product.id}`}>
-                    <h3 className="product-title">{product.name}</h3>
-                </Link>
-                <p className="product-price">${product.price.toFixed(2)}</p>
-                <button className="add-to-cart-btn">
-                    Add to Cart <ShoppingBag size={16} />
-                </button>
-            </div>
-            <style>{`
+  return (
+    <div className="product-card">
+      <Link to={`/product/${product.id}`} className="product-image-link">
+        <img src={product.image} alt={product.name} className="product-image" />
+      </Link>
+      <div className="product-info">
+        <span className="product-type">{product.type}</span>
+        <Link to={`/product/${product.id}`}>
+          <h3 className="product-title">{product.name}</h3>
+        </Link>
+        <p className="product-price">₹{product.price.toFixed(2)}</p>
+        <button className="add-to-cart-btn">
+          Add to Cart <ShoppingBag size={16} />
+        </button>
+      </div>
+      <style>{`
         .product-card {
           background-color: var(--color-white);
           border-radius: var(--border-radius);
@@ -86,8 +86,8 @@ const ProductCard = ({ product }) => {
           background-color: var(--color-secondary);
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ProductCard;
