@@ -2,6 +2,7 @@ import ajwaImg from '../assets/images/ajwa_dates_1763660793815.png';
 import medjoolImg from '../assets/images/medjool_dates_1763660802108.png';
 import safawiImg from '../assets/images/safawi_dates_1763660810004.png';
 import mabroomImg from '../assets/images/mabroom_dates_1763660818282.png';
+import kimiaImg from '../assets/images/kimiaDates.png';
 
 export const products = [
     {
@@ -75,6 +76,29 @@ export const products = [
         certifications: ['Premium Quality', 'Halal Certified'],
         weight: '500g',
         storageInstructions: 'Keep in cool environment. Refrigeration extends shelf life.'
+    },
+    {
+        id: 5,
+        name: 'Kimia Dates',
+        description: 'Soft, dark, and naturally sweet. A popular everyday date with a rich, syrupy taste.',
+        price: 250.00,
+        wholesalePrice: 230.00,
+        image: kimiaImg,
+        type: 'Kimia',
+        variety: 'Premium Kimia Mazafati',
+        origin: 'Bam, Iran',
+        harvestDate: '2024-08-25',
+        expiryDate: '2025-08-25',
+        featured: false,
+        nutritionalHighlights: [
+            'Naturally high in energy',
+            'Rich in iron',
+            'Supports digestion',
+            'Low in fat'
+        ],
+        certifications: ['Orgsanic', 'Halal Certified'],
+        weight: '500g',
+        storageInstructions: 'Best stored refrigerated to maintain softness and freshness.'
     },
 ];
 //a
